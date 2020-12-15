@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body {
     background-image: url("../img/test.jpeg");
-    background-repeat: no-repeat;
     color: black;
     font-family: 'Montserrat', sans-serif;
     background-attachment: fixed;
-    background-size:cover;
     background-size:100% auto;
   }
-@media(max-width:850px){
+@media(min-width:600px){
   body{
     background-image: url("../img/test-landscape.jpeg");
     color: black;
