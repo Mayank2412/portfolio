@@ -51,7 +51,7 @@ label {
 .nav-link:hover,:focus{
     color: #fff;
     background-color: #ffffff30;
-    transition-duration: 0.25s;
+    transition-duration: 0.5s;
 }
 .collapse-mods{
     width:40%;
@@ -381,7 +381,13 @@ label {
 .slide-wrapper{display:inline;}
 .slide-wrapper .container{padding:0;}
 
-
+#icons{
+  position: absolute;
+  margin-left:94%;
+  top:3%;
+  text-align: center;
+  position: fixed;
+}
 /*------------------------------ vertical bootstrap slider----------------------------*/
 
 .carousel-inner> .carousel-item.carousel-item-next ,
