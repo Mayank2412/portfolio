@@ -37,6 +37,11 @@ label {
     margin-right:0.2%;
     background-color: #ffffff20;
 }
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
 .tab-pane{
     background-color: #ffffff20;
     color: #fff;
@@ -349,6 +354,18 @@ label {
     }
   }
 
+  .custom-jumbo1,.custom-jumbo1 > hr {
+    margin-left:0%;
+    margin-right:2%;
+    padding:2%;
+    padding-top:5%;
+    padding-bottom:5%;
+    color: #fff;
+    background-color: #ffffff20;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
 
 .custom-jumbo,.custom-jumbo > hr {
     margin-left:2%;
