@@ -32,26 +32,36 @@ var message=x.elements[3].value;
     } 
 </script>
 <body>
- <!--   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;position: fixed;width: 100%;font-size:1em;padding:0.5%">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ffffff00;position: fixed;width:100%;font-size:1em;padding:0.5%;">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a href="#home">
+                <button class="btn1" data-bs-toggle="tooltip" data-bs-html="true" title="Home"><i class="fa fa-2x fa-home"></i></button>
+            </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+              <a href="#about">
+                <button class="btn1" data-bs-toggle="tooltip" data-bs-html="true" title="About Me"><i class="fa fa-2x fa-info-circle"></i></button>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#skills">My Skills</a>
+              <a href="#skills">
+                <button class="btn1" data-bs-toggle="tooltip" data-bs-html="true" title="My Skills"><i class="fa fa-2x fa-tasks"></i></button>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#blog">My Blog</a>
+              <a href="#blog">
+                <button class="btn1" data-bs-toggle="tooltip" data-bs-html="true" title="My Blog"><i class="fa fa-2x fa-comment"></i></button>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#contact">Contact Me</a>
+              <a href="#contact">
+                <button class="btn1" data-bs-toggle="tooltip" data-bs-html="true" title="Contact Me"><i class="fa fa-2x fa-address-book"></i></button>
+              </a>
             </li>
           </ul>
-      </nav> -->
-    <div id="icons">
+      </nav>
+    <div id="icons" style="background-color: #ffffff00;right:0%;">
         <a target="_blank" href="https://www.linkedin.com/in/mayank-gupta-24122000/">
             <button class="btn" data-bs-toggle="tooltip" data-bs-html="true" title="LinkedIn Profile."><i class="fa fa-2x fa-linkedin" style="color: #0E76A8"></i></button>
         </a><br>
@@ -81,7 +91,7 @@ var message=x.elements[3].value;
         </a><br>      
       </div>
     <section id="home" style="width:95%;float: left;margin-bottom:16%;margin-top:10%;">
-      <div class="jumbotron custom-jumbo"; style="width:50%;float:right;">  
+      <div class="jumbotron custom-jumbo"; style="width:70%;float:right;">  
         <h2 class="display" style="font-size:3rem">Howdy, World! I'm Mac.</h2>
         <hr class="my-2" style="height: 2px;border-width:0px;"> 
         <p class="lead">This is my portfolio. <br>For more pages, go to the top left corner. Enjoy !</p>
@@ -147,8 +157,8 @@ var message=x.elements[3].value;
     </div>
       </section>  
     <section id="skills" style="width:92%;float: left;margin-bottom: 16%">
-    <div id="flex-container" style="display: flex;flex-direction: row;justify-content: left;align-items: center;background-color: #ffffff20;border-top-right-radius: 10rem;padding-bottom:3%;border-bottom-right-radius: 10rem;">
-          <div class="custom-jumbo1" style="width:50%;height:50%;background-color: #000000">
+      <div id="flex-container" style="display: flex;flex-direction: row;justify-content: left;align-items: center;background-color: #ffffff10;border-top-right-radius: 10rem;padding-bottom:3%;border-bottom-right-radius: 10rem;">
+          <div class="custom-jumbo1" style="width:50%;height:50%;background-color: #000000;">
             <h1 class="display"style="font-weight:100;text-align: center">My Technical Skills</h1>
           </div>
           <div style="margin-top:2%;width: 50%;margin-left: 5%;">
@@ -212,7 +222,7 @@ var message=x.elements[3].value;
       </section>
     <section id="contact" style="width: 95%;float: left;margin-bottom: 16%">
         <div id="flex-container" style="display: flex;flex-direction: row;justify-content: center;">
-            <section class="slide-wrapper" style="float: right;margin-top:9%;width:100%">
+            <section class="slide-wrapper" style="float: right;margin-top:8%;width:100%">
                 <div class="container">
                   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
                         <!-- Indicators -->
@@ -251,7 +261,7 @@ var message=x.elements[3].value;
             </section>
             <form id="form1" class="custom-jumbo" action="contact.html" style="top:2.5%;width:50%;padding: 1rem;margin-right:5%">
                 <div class="form-group">
-                <div id="collapse4" style="font-weight: 100;color: #fff;font-size:3.5rem;text-align: center;">Contact Me.<br><h6 style="font-style: italic;">Surely you can't miss a link here, can you?</h6></div>  
+                <div id="collapse4" style="font-weight: 100;color: #fff;font-size:3.5rem;text-align: center;">Contact Me.<br></div>  
               </div>
                 <div class="form-group">
                   <label for="formGroupExampleInput">Name</label>
