@@ -39,6 +39,7 @@ label {
 }
 @media (max-width: 800px) {
   .flex-container {
+    display: flex;
     flex-direction: column;
   }
 }
@@ -85,8 +86,25 @@ label {
 .btn:hover{
     background-color: #fff;
     transition-duration: 0.25s;
-    color: #000;
 }
+.btn1{
+  border-radius:2.5rem;
+  width:4rem;
+  height:4rem;
+  border-width:0;
+  margin-left:0.1rem;
+  margin-bottom:0.1rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #00000000;
+  color: #fff;
+}
+.btn1:hover,:focus{
+  background-color: #000;
+  border-color: #fff;
+  transition-duration: 0.7s;
+}
+
 
 .fab {
     font-size:1rem;
@@ -113,6 +131,7 @@ label {
     height: 6rem;
     background: #000000;
     border-radius: 1rem;
+    border-color: #fff;
     color: #fff;
     font-size: 0.8rem;
     font-weight: lighter;
@@ -401,10 +420,11 @@ label {
 #icons{
   position: absolute;
   margin-left:94%;
-  top:6%;
+  top:2%;
   text-align: center;
   position: fixed;
 }
+
 /*------------------------------ vertical bootstrap slider----------------------------*/
 
 .carousel-inner> .carousel-item.carousel-item-next ,
