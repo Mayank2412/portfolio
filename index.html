@@ -31,22 +31,16 @@ var message=x.elements[3].value;
        alert("If a valid email was entered, then the email has been sent successfully.");
     } 
 </script>
-<body id="b1" style="overflow-x: hidden;">
-    <!-- <div id="icons1" style="background-color: #ffffff00;left:0%;">
-      <a href="#about">
-        <button class="btn1" data-bs-toggle="tooltip" data-bs-html="true" title="About Me"><i class="fa fa-info-circle"></i></button>
-    </a><br>
-    <a href="#skills">
-      <button class="btn1" data-bs-toggle="tooltip" data-bs-html="true" title="My Skills"><i class="fa fa-tasks"></i></button>
-    </a><br>
-    <a href="#blog">
-        <button class="btn1" data-bs-toggle="tooltip" data-bs-html="true" title="My Blog"><i class="fa fa-comment"></i></button>
-    </a><br>
-    <a href="#contact">
-        <button class="btn1" data-bs-toggle="tooltip" data-bs-html="true" title="Contact Me"><i class="fa fa-address-book"></i></button>
-    </a><br>     
-      </div> -->
-    <div id="icons" style="background-color: #ffffff00;right:0.2%;">
+<body style="overflow-x: hidden;" onload="myFunction()">
+<div id="loader" style="width:100%;overflow-y: hidden;position: absolute;text-align: center;">
+  <svg class="loader" width="200" height="200" viewBox="0 0 200 200">
+    <polyline class="line-cornered stroke-still" points="100,100 0,0 0,200 200,200 200,0 100,100" stroke-width="2" fill="none"></polyline>
+    <polyline class="line-cornered stroke-animation" points="100,100 0,0 0,200 200,200 200,0 100,100" stroke-width="2" fill="none"></polyline>
+  </svg>
+  <h1 style="color: #fff;text-align: center;font-size: 3em;margin-top:30%;">Howdy, World. I'm Mac.</h1>
+</div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+     <div id="icons" style="background-color: #ffffff00;right:0.2%;">
         <a href="#about">
           <button class="btn" data-bs-toggle="tooltip" data-bs-html="true" title="About Me"><i class="fa fa-info-circle" style="color: #00fffb;font-size:1.5em"></i></button>
         </a><br>
@@ -84,13 +78,6 @@ var message=x.elements[3].value;
             <button class="btn" data-bs-toggle="tooltip" data-bs-html="true" title="Download my resume."><i class="fa fa-save" style="color: red;font-size:1.5em;"></i></button>
         </a><br>      
       </div>
-    <!-- <section id="home" style="width:95%;float: left;margin-bottom:10%;margin-top:10%;">
-      <div class="jumbotron custom-jumbo"; style="width:70%;float:right;">  
-        <h2 class="display" style="font-size:3rem">Howdy, World! I'm Mac.</h2>
-        <hr class="my-2" style="height: 2px;border-width:0px;"> 
-        <p class="lead">This is my portfolio. <br>For more pages, go to the top left corner. Enjoy !</p>
-      </div>
-      </section> -->
     <section id="about" style="width:95%;margin-left:0%;float: left;margin-top:5%;margin-bottom: 10%">
           <div style="color: #fff;width: 60%;text-align: center;margin-right:2%;margin-bottom:1%;float:right">
             <h1 class="display-4" style="border: 1px solid #fff;padding: 5%">This, is Me.</h1>
@@ -214,7 +201,7 @@ var message=x.elements[3].value;
             </div>    
         </div>
       </section>
-    <section id="contact" style="width: 95%;margin-left:1%;float: left;margin-bottom: 10%">
+    <section id="contact" style="width: 95%;margin-left:1%;float: left;margin-bottom: 1%">
         <div id="flex-container" style="display: flex;flex-direction: row;justify-content: center;">
             <section class="slide-wrapper" style="float: right;margin-top:8%;width:100%">
                 <div class="container">
@@ -278,5 +265,19 @@ var message=x.elements[3].value;
               
         </div>
       </section>
+  </div>
 </body>
+<script>
+  var myVar;
+  
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+  
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
+  
 </html>
