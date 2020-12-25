@@ -3,7 +3,121 @@
   width: 5px;
   border-radius:5px;
 }
+/*---------loader--------*/
+body {
+  background: #000000;
+  color: #fff;
+}
 
+.loader {
+  position: fixed;
+  left: 42%;
+  top:10%;
+}
+
+.stroke-still {
+  stroke: #232323;
+}
+
+.stroke-animation {
+  -webkit-animation: stroke-spacing 1.2s ease-in, stroke-color 4.8s linear;
+          animation: stroke-spacing 1.2s ease-in, stroke-color 4.8s linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+@-webkit-keyframes stroke-spacing {
+  0% {
+    stroke-dasharray: 0 200;
+  }
+  45% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 200 200;
+  }
+  90% {
+    stroke-dashoffset: -200;
+    stroke-dasharray: 200 200;
+  }
+  100% {
+    stroke-dashoffset: -200;
+    stroke-dasharray: 200 200;
+  }
+}
+
+@keyframes stroke-spacing {
+  0% {
+    stroke-dasharray: 0 200;
+  }
+  45% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 200 200;
+  }
+  90% {
+    stroke-dashoffset: -200;
+    stroke-dasharray: 200 200;
+  }
+  100% {
+    stroke-dashoffset: -200;
+    stroke-dasharray: 200 200;
+  }
+}
+
+@-webkit-keyframes stroke-color {
+  0%  { stroke: red; }
+  24% { stroke: blue; }
+  25% { stroke: green; }
+  49% { stroke: yellow; }
+  50% { stroke: pink; }
+  74% { stroke: orange; }
+  75% { stroke: white; }
+  99% { stroke: purple; }
+}
+
+@keyframes stroke-color {
+  0%  { stroke: #3498DB; }
+  24% { stroke: #643232; }
+  25% { stroke: #327864; }
+  49% { stroke: #327864; }
+  50% { stroke: #32326e; }
+  74% { stroke: #32326e; }
+  75% { stroke: #78325a; }
+  99% { stroke: #78325a; }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 0.5s;
+  animation-name: animatebottom;
+  animation-duration: 0.5s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+}
+
+/*-----------------------*/
 /* Track */
 ::-webkit-scrollbar-track {
   border-radius: 20px;
@@ -11,13 +125,13 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: black; 
+  background: #fff; 
   border-radius: 20px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #00000085; 
+  background: #fff; 
 }
 body {
     background-image: url("../img/test.jpeg");
@@ -187,34 +301,8 @@ label {
             animation: 2s counterclockwise infinite;
   }
   
+ 
 /*-------------------download button-----------------*/
-.custbtn1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  margin: 20px auto;
-  width: 14rem;
-  height: 7rem;
-  background: #000000;
-  border-radius: 1rem;
-  color: #fff;
-  font-size: 0.8rem;
-  font-weight: lighter;
-  letter-spacing: 2px;
-  -webkit-transition: 1s box-shadow;
-  transition: 1s box-shadow;
-}
-
-.custbtn1:hover {
-  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
-}
 
 .custa:hover{
   text-decoration: none;
