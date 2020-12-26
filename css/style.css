@@ -146,7 +146,7 @@ body {
     color: black;
     font-family: 'Montserrat', sans-serif;
     background-attachment: fixed;
-    background-size:100% auto;
+    background-size:auto;
   }
 }
 i {
