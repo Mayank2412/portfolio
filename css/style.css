@@ -140,7 +140,7 @@ body {
     background-attachment: fixed;
     background-size:100% auto;
   }
-@media(max-width:900px){
+@media(max-width:1200px){
   body{
     background-image: url("../img/test-landscape.jpeg");
     color: black;
