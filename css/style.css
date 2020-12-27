@@ -148,14 +148,6 @@ body {
     background-attachment: fixed;
     background-size:100% auto;
   }
-  .custbtn{
-    width:4rem;
-    height:4rem;
-  }
-  .custbtn:hover{
-    width:4rem;
-    height:4rem;
-  } 
 }
 i {
     color: white;
