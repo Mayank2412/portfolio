@@ -146,7 +146,7 @@ body {
     color: black;
     font-family: 'Montserrat', sans-serif;
     background-attachment: fixed;
-    background-size:auto;
+    background-size:100% auto;
   }
 }
 i {
@@ -212,10 +212,14 @@ label {
 .collapse-mods > .card{
     background-color: #000000;
 }
+/*--------------------projectdisplay-------------------*/
+
+
+/*-----------------------------------------------------*/
 .btn{
-    border-radius:2.5rem;
-    width:3rem;
-    height:3rem;
+    border-radius:2.75rem;
+    width:2.75rem;
+    height:2.75rem;
     margin-bottom:0.1rem;
     text-align: center;
     vertical-align: middle;
@@ -498,6 +502,18 @@ label {
     border-top: 2px solid #fff;
 }
 
+.custom-jumbo2,.custom-jumbo2 > hr {
+  margin-left:2%;
+  padding:2%;
+  padding-top:5%;
+  padding-bottom:5%;
+  color: #fff;
+  background-color: #ffffff20;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid #fff;
+}
+
 .custom-jumbo,.custom-jumbo > hr {
     margin-left:2%;
     margin-right:2%;
@@ -536,12 +552,6 @@ label {
   position: fixed;
 }
 
-#icons1{
-  margin-left:2%;
-  top:2%;
-  text-align: center;
-  position: fixed;
-}
 /*------------------------------ vertical bootstrap slider----------------------------*/
 
 .carousel-inner> .carousel-item.carousel-item-next ,
