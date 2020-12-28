@@ -11,26 +11,6 @@
 <link rel="stylesheet" href="icomoon/qwiklabs/style.css">
 <link rel="stylesheet" href="icomoon/hackerrank/style.css">
 <link rel="stylesheet" href="icomoon/github/style.css">
-<script src= "https://smtpjs.com/v3/smtp.js"></script> 
-<script>
-function sendEmail() { 
-var x = document.getElementById("form1");
-var name=x.elements[0].value;
-var email=x.elements[1].value;
-var subject=x.elements[2].value;
-var message=x.elements[3].value;
-      Email.send({ 
-        Host: "smtp.gmail.com", 
-        Username: "inforparcel@gmail.com", 
-        Password: "Informat#2468", 
-        To: 'mayankguptadlf@gmail.com', 
-        From: email, 
-        Subject: subject, 
-        Body: message, 
-      }) 
-       alert("If a valid email was entered, then the email has been sent successfully.");
-    } 
-</script>
 <body style="overflow-x: hidden;" onload="myFunction()">
 <div id="loader" style="width:100%;overflow-y: hidden;position: absolute;text-align: center;">
   <svg class="loader" width="200" height="200" viewBox="0 0 200 200">
