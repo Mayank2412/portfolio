@@ -225,9 +225,9 @@ label {
 
 /*-----------------------------------------------------*/
 .btn{
-    border-radius:2.75rem;
-    width:2.75rem;
-    height:2.75rem;
+    border-radius:3rem;
+    width:3rem;
+    height:3rem;
     margin-bottom:0.1rem;
     text-align: center;
     vertical-align: middle;
@@ -237,25 +237,6 @@ label {
     background-color: #fff;
     transition-duration: 0.25s;
 }
-.btn1{
-  border-radius:2.5rem;
-  width:4rem;
-  height:4rem;
-  border-width:0;
-  margin-left:0.1rem;
-  margin-bottom:0.1rem;
-  text-align: center;
-  vertical-align: middle;
-  background-color: #00000000;
-  color: #fff;
-}
-.btn1:hover,:focus{
-  background-color: #000;
-  border-color: #fff;
-  transition-duration: 0.7s;
-}
-
-
 .fab {
     font-size:1rem;
     background: #d6249f;
