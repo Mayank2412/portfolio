@@ -2,7 +2,9 @@
 ::-webkit-scrollbar {
   width: 0.35rem;
 }
+/*-----------------------------------WELCOME-----------------------------------------*/
 
+/*-----------------------------------------------------------------------------------*/
 /* Track */
 ::-webkit-scrollbar-track {
   background: #fff; 
@@ -277,6 +279,22 @@ label {
 .btn:hover{
     background-color: #fff;
     transition-duration: 0.25s;
+}
+.btnnew{
+  border-radius:3rem;
+  width:3rem;
+  height:3rem;
+  margin-bottom:0.1rem;
+  border: 0.1rem solid #fff;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #000000;
+}
+.btnnew:hover{
+  background-color: grey;
+  color: #000;
+  transition-duration: 0.25s;
 }
 .fab {
     font-size:1rem;
@@ -565,8 +583,23 @@ label {
   background-color: #ffffff20;
   transition-duration:0.4s;
 }
-
-
+.custom-jumbo5,.custom-jumbo5 > hr {
+  margin-right:3%;
+  color: #fff;
+  font-weight:100;
+  background-color: #ffffff20;
+  border-left: 0rem solid #fff;
+  border: 0.1rem solid #ffffff00;
+}
+.custom-jumbo5 >h6{
+  font-size:1rem;
+}
+.custom-jumbo5 >h4{
+  font-size:1.25rem;
+}
+.custom-jumbo5 >h5{
+  font-size:1rem;
+}
 .custom-jumbo,.custom-jumbo > hr {
     margin-left:2%;
     margin-right:2%;
