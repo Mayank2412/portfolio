@@ -12,12 +12,12 @@
 <link rel="stylesheet" href="icomoon/hackerrank/style.css">
 <link rel="stylesheet" href="icomoon/github/style.css">
 <body style="overflow-x: hidden;" onload="myFunction()">
-<div id="loader" style="width:100%;overflow-y: hidden;position: absolute;text-align: center;">
+<div id="loader" style="width:100%;overflow-y: hidden;position: absolute;text-align: center;margin-left:0%;">
   <svg class="loader" width="200" height="200" viewBox="0 0 200 200">
     <polyline class="line-cornered stroke-still" points="100,100 0,0 0,200 200,200 200,0 0,200" stroke-width="2" fill="none"></polyline>
     <polyline class="line-cornered stroke-animation" points="100,100 0,0 0,200 200,200 200,0 0,200" stroke-width="2" fill="none"></polyline>
   </svg>
-    <h1 style="color: #fff;text-align: center;font-size: 3em;margin-top:30%;">Howdy, World. I'm Mac.</h1>
+    <h1 style="color: #fff;text-align: center;font-size: 3em;margin-top:30%;">One Awesome Person, coming right up !</h1>
     <h5 style="color: #fff;text-align: center;font-size: 0.8em;margin-top:3%;">Coding | Web Development | Art | Writing | Cars | Indian Armed Forces</h5>
 </div>
 <div style="display:none;" id="myDiv" class="animate-bottom">
@@ -62,7 +62,23 @@
             <button class="btn" data-bs-toggle="tooltip" data-bs-html="true" title="Download my resume."><i class="fa fa-save" style="color: red;font-size:1.5em;"></i></button>
         </a><br>      
       </div>
-    <section id="about" style="width:95%;margin-left:0%;float: left;margin-top:5%;margin-bottom: 10%">
+    <section id="header" style="width:50%;position:relative;top:0%;left:0%;">
+    <div class="custom-jumbo5" style="padding:5%;padding-top:15%;height:100%;border-top-right-radius: 40%;border-bottom-right-radius: 40%">
+      <h1>Mayank Gupta</h1><br>
+      <h6>Web Developer, Programmer, Graphic Designer, Artist</h6>
+      <hr class="my-2" style="background-color: #fff;width:60%;float:left"><br><br>
+      <h4 style="text-align: center;font-style: italic;">"Mr. Tired never achieved anything of significance."</h4><br>
+      <h5>I'm a trainee programmer and web developer, ready to learn, adapt, and overcome every hurdle I face. I like to maintain efficiency and perfectionalism in my projects, alongwith inspired creativity.</h5><br>
+      <h5>Also, I'm a car and cartoon geek, and an arduous Linkin Park fan. I have a few art examples as well, wherein I murder sketching (of course I haven't uploaded them). </h5><br>
+      <h5>I'd love to talk about anything I know something about, and that includes ideas and tasks as well.</h5>
+    </div>
+    <a href="#about">
+    <button class="btnnew" style="position:absolute;top:45%;left:93%">
+      <i class="fa fa-chevron-down"></i>
+    </button>
+  </a>
+      </section>
+    <section id="about" style="width:95%;margin-left:0%;float: left;margin-top:5%;margin-bottom: 10%;">
           <div style="color: #fff;width: 60%;text-align: center;margin-right:2%;margin-bottom:1%;float:right">
             <h1 class="display-4" style="border: 1px solid #fff;padding: 5%">This, is Me.</h1>
           </div>
@@ -272,11 +288,9 @@
 </body>
 <script>
   var myVar;
-  
   function myFunction() {
     myVar = setTimeout(showPage, 3000);
   }
-  
   function showPage() {
     document.getElementById("loader").style.display = "none";
     document.getElementById("myDiv").style.display = "block";
