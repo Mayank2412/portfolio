@@ -229,8 +229,8 @@ body {
     background-attachment: fixed;
     background-size:auto;
   }
-  .logo{
-    display: none;
+  .logo b{
+    font-size:3rem;
   }
   .custbtn{
     width:3rem;
