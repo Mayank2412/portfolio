@@ -230,10 +230,7 @@ body {
     background-size:auto;
   }
   .logo{
-    width:25%;
-  }
-  .logo b{
-    font-size: 3rem;
+    display: none;
   }
   .custbtn{
     width:3rem;
